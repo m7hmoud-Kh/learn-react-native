@@ -1,51 +1,15 @@
+import FlatListComponent from '@/components/FlatListComponent';
+import LocationComponent from '@/components/LocationComponent';
 import TabComponent from '@/components/TabComponent';
-import { Button, Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Button, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
+
   return (
-    <View style={style.container}>
-      <View style={style.card}>
-      {/* <TabComponent text={"hello"}/>
-      <TabComponent text={"welcome"}/>
-      <TabComponent text={"Hi"}/>
-      <TabComponent text={"Mahmoud Khairy"}/>
-      <TabComponent text={"i love react Native"}/> */}
-      <Pressable onPress={() => {alert("This is Price")}}>
-        <Text>
-          2000 $
-        </Text>
-      </Pressable>
-      <Image source={require('../../assets/images/react-logo.png')}
-      style={style.imageStyle}/>
-      <Text style={style.titleStyle}>Logo</Text>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit assumenda fugiat cum, autem saepe.</Text>
-      <Pressable>
-        <Text style={style.buttonStyle}>Learn More</Text>
-      </Pressable>
+    <View>
+      {/* <FlatListComponent /> */}
+      {/* <LocationComponent /> */}
     </View>
-
-    <View style={style.card}>
-      {/* <TabComponent text={"hello"}/>
-      <TabComponent text={"welcome"}/>
-      <TabComponent text={"Hi"}/>
-      <TabComponent text={"Mahmoud Khairy"}/>
-      <TabComponent text={"i love react Native"}/> */}
-      <Pressable onPress={() => {alert("This is Price")}}>
-        <Text>
-          2000 $
-        </Text>
-      </Pressable>
-      <Image source={require('../../assets/images/react-logo.png')}  style={style.imageStyle}/>
-      <Text style={style.titleStyle}>Logo</Text>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit assumenda fugiat cum, autem saepe.</Text>
-      <Pressable >
-        <Text style={style.buttonStyle}>Learn More</Text>
-      </Pressable>
-    </View>
-
-    </View>
-
-
   );
 }
 
@@ -70,7 +34,10 @@ const style = StyleSheet.create({
   titleStyle: {
     fontSize:20,
     marginVertical:5,
-    textAlign:"center"
+    textAlign:"center",
+    backgroundColor: 'black',
+    color: 'white',
+    padding: 10
   },
   buttonStyle: {
     backgroundColor: 'black',
