@@ -1,14 +1,11 @@
-import FlatListComponent from '@/components/FlatListComponent';
-import LocationComponent from '@/components/LocationComponent';
-import TabComponent from '@/components/TabComponent';
-import { Button, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import ConditionalComponent from '@/components/ConditionalComponent';
+import { StyleSheet, View } from 'react-native';
 
 export default function HomeScreen() {
 
   return (
     <View>
-      {/* <FlatListComponent /> */}
-      {/* <LocationComponent /> */}
+      <ConditionalComponent isValid={false} />
     </View>
   );
 }
