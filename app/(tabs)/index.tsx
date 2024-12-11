@@ -1,11 +1,16 @@
 import ConditionalComponent from '@/components/ConditionalComponent';
+import CounterComponent from '@/components/CounterComponent';
+import TodoListComponent from '@/components/TodoListComponent';
+import UpdateProfile from '@/components/UpdateProfile';
 import { StyleSheet, View } from 'react-native';
 
 export default function HomeScreen() {
 
   return (
     <View>
-      <ConditionalComponent isValid={false} />
+      {/* <CounterComponent /> */}
+      {/* <TodoListComponent /> */}
+      <UpdateProfile />
     </View>
   );
 }
